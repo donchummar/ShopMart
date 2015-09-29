@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.nod.shopmart.widget.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkable_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <com.nod.shopmart.widget.InertCheckBox
+        android:id="@+id/checkboxFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/checkbox_seletor"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/checkboxFilter"
+        android:padding="10dp"
+        android:text="Medium Text" />
+
+
+</com.nod.shopmart.widget.CheckableRelativeLayout>
