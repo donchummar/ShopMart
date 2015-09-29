@@ -61,9 +61,8 @@ public class ViewpagerAdaptor extends PagerAdapter {
         View view = LayoutInflater.from(container.getContext()).inflate(R.layout.view_pager_item,container,false);
         view.setTag(position);
         RecyclerView filterList = (RecyclerView) view.findViewById(R.id.filer_list);
-        view.findViewById(R.id.view_pager_lyt).getLayoutParams().height = (int) (AppUtils.getScreenHeight((Activity) container.getContext()) * 0.7);
         int height = AppUtils.getScreenHeight((Activity) container.getContext());
-        filterList.getLayoutParams().height = (int) (height * 0.6);
+        filterList.getLayoutParams().height = (int) (height * 0.5);
         LinearLayoutManager linearlayoutManager = new LinearLayoutManager(container.getContext(), LinearLayoutManager.VERTICAL, false);
         filterList.setLayoutManager(linearlayoutManager);
         filterList.setAdapter(new FilterlistAdaptor(mContext, (ArrayList<Facets>) mFolderList.get(position).getFacets()));
